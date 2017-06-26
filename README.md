@@ -1,5 +1,4 @@
-## Heuristic
-
+Heuristic
 ====
 
 ## Description
