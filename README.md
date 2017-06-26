@@ -9,6 +9,6 @@ Heuristic
 ## Usage
 1. Open terminal and run the command "git clone git@github.com:MiraiNiki/HeuristicForSTEP2017.git"
 2. Compile the file named "heuristic1.java".(Run the command "javac heuristic1.java")
-3. Run the command "java heurisitic *input filename* *output filename*".
-4. If you want to get the distance, compile "calcDistance.java" and run the command "java calcDistance *3's output filename*".
+3. Run the command "java heurisitic *input_filename* *output_filename*".
+4. If you want to get the distance, compile "calcDistance.java" and run the command "java calcDistance *3's_output_filename*".
 
