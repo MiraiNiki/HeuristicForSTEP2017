@@ -7,7 +7,7 @@ class heuristic1{
     static ArrayList<Integer> yPos = new ArrayList<Integer>();
     static ArrayList<Integer> order = new ArrayList<Integer>();
     static int startPoint = 0;
-    static ArrayList<Integer> distance = new ArrayList<Integer>();
+    static int distance = 0;
 
     public static void readCSVFile(String fileName){
         try{
@@ -74,30 +74,8 @@ class heuristic1{
     }
 
     public static void calcOrder(){
-        getDistance();
-        testGetDistance();
-        for(int i = 0; i < distance.size(); i++){
-            int min = distance.indexOf(Collections.min(distance));
-            order.add(min);
-            distance.set(min, Integer.MAX_VALUE);
-        }
-    }
-
-    public static void getDistance(){
         for(int i = 0; i < xPos.size(); i++){
-            if(i == startPoint){
-                distance.add(0);
-            }else{
-                double dx = xPos.get(i)-xPos.get(startPoint);
-                double dy = yPos.get(i)-yPos.get(startPoint);
-                distance.add( (int)(Math.sqrt( dx*dx + dy*dy )) );
-            }
-        }
-    }
-
-    public static void testGetDistance(){
-        for(int i = 0; i < distance.size(); i++){
-            System.out.println(distance.get(i));
+            order.add(i);
         }
     }
 
