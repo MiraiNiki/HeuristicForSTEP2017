@@ -1,4 +1,4 @@
 #!/bin/sh
 read num
 java heuristic1 input_$num.csv solution_yours_$num.csv
-java calcDistance input_$num.csv solution_yours_$num.csv
+
