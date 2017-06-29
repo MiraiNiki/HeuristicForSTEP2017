@@ -44,8 +44,8 @@ class calcDistance{
 
     public static void getDistance(){
         int end = order.size() - 1;
-        double edx = xPos.get(end)-xPos.get(0);
-        double edy = yPos.get(end)-yPos.get(0);
+        double edx = xPos.get(order.get(end))-xPos.get(order.get(0));
+        double edy = yPos.get(order.get(end))-yPos.get(order.get(0));
         distance = Math.sqrt( edx*edx + edy*edy );
         for(int i = 1; i < order.size(); i++){
             int current = order.get(i-1);

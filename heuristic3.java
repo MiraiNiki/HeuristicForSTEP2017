@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-class heuristic2{
+class heuristic3{
 
     static ArrayList<Integer> xPos = new ArrayList<Integer>();
     static ArrayList<Integer> yPos = new ArrayList<Integer>();
@@ -211,7 +211,7 @@ class heuristic2{
         int cnt = 0;
         for(int i = 0; i < distance.size() && cnt < 3; i++){
             int min = distance.indexOf(Collections.min(distance));
-            if(cnt < 2){
+            if(cnt % 2 == 0){
                 order.add(min);
                 
                 leftPoints.remove((Integer)min);
